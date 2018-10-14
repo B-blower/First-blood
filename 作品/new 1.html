@@ -1,0 +1,69 @@
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <title>欢迎来到清泽心雨</title>
+ <style type="text/css">
+ span{
+    color:gray;
+	font-weight:bold;
+}
+ div{
+    width:200px;
+    padding:20px;
+    border:1px solid gray;
+    margin:10px;  
+    position:absolute;
+    left:650px;
+    top:150px;	
+}
+h1{
+    text-align:center;
+  }
+
+</style>
+</head>
+<body background="../作品/背景.jpg" >
+<div>
+<h1>报名系统</h1>
+<form  method ="post" action="save.php">
+    <span>姓名*:</span>
+    <br>	
+	<input type="text" name="myName"/>
+	<br>
+	<span>专业名称*:</span>
+    <br>	
+    <input type="text" name="pass"/>
+	<br>
+	<span>电话号码*:</span>
+	<br>
+	<input type="text" name="phonehumber">
+	<br>
+	<span>邮箱地址*:</span>
+	<br>
+	<input type="text" name="email">
+    <br>
+    <label><span>意向部门:</span></label>
+	<br>
+    <select>
+      <option value="综合办公室">综合办公室</option>
+      <option value="公关策划部">公关策划部</option>
+      <option value="网络安全部" selected="selected">网络安全部</option>
+      <option value="视觉设计部">视觉设计部</option>
+	  <option value="技术开发部">技术开发部</option>
+	  <option value="综合媒体集团">综合媒体集团</option>
+	  <option value="新闻集团">新闻集团</option>
+    </select>
+    <br>
+    <label><span>性别*:</span></label>
+	<br>
+    <label>男</label>
+    <input type="radio" value="1"  name="gender" />
+	<br>
+    <label>女</label>
+    <input type="radio" value="2"  name="gender" />
+	<br>
+	<input type="submit" value="提交" name="submitBtn" />
+</form>
+</div>
+</body>
+</html>
